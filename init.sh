@@ -31,7 +31,7 @@ FOLDER="${PWD%/*}/${ROLE}"
 cp -rf . "${FOLDER}" && cd "${FOLDER}"
 
 # tidy up a few files
-rm readme.md && mv _readme.md readme.md && rm init.sh
+rm readme.md && mv _readme.md readme.md && rm init.sh && rm -rf .git
 
 # set up git
 git init && git remote add origin https://github.com/prometeo-cloud/${ROLE} && git add .
